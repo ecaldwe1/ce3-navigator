@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+
+{% block content %}
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-4">
+
+                <!-- Secondary left-side navbar -->
+                <div class="navbar navbar-default sidenav-ce3">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#side-nav">
+                            Phase Menu
+                        </button>
+                    </div>
+                    <div id="side-nav" class="collapse navbar-collapse main-nav">
+                        <ul class="nav navbar-nav">
+                            <li class="step-through-nav"><a href="index.html#nav-anchor"><span
+                                    class="glyphicon glyphicon-chevron-left"></span> Back to Cookbook</a></li>
+                            <li class="active"><a href="prelim-sol-des.html">Preliminary Solution Design Summary</a>
+                            </li>
+                            {% placeholder "section menu" %}
+git
+{#                            <li><a href="psd_pull-tog-des.html">1. Pulling Together The Design</a></li>#}
+{#                            <li><a href="psd_asbl-tech-req.html">2. Assemble Technical Requirements</a></li>#}
+{#                            <li><a href="">3. Develop and Post Competitive Tender</a></li>#}
+{#                            <li><a href="">4. Shortlist Selections</a></li>#}
+{#                            <li><a href="">5. Reconcile Submission CAPEX with Business Model</a></li>#}
+{#                            <li><a href="">6. Iterate Solution Design With Selected Vendors</a></li>#}
+{#                            <li><a href="">7. Select Final Design & Finalize Business Model</a></li>#}
+{#                            <li class="step-through-nav"><span class="descriptor">up next:</span><a#}
+{#                                    class="chevron-in-line" href="proj-finance.html">Project&nbsp;Finance</a></li>#}
+                        </ul>
+                    </div>
+                </div>
+
+            </div><!-- col-sm-4 left-nav -->
+
+            <div class="col-sm-8 main-content">
+
+
+                <h1>{% placeholder "page title" %}</h1>
+                <h4>{% placeholder "page subtitle" %}</h4>
+
+                <h3>Purpose</h3>
+                {% placeholder "purpose" %}
+
+                <div class="row">
+                    {% include "page-elements/tools_templates.html" %}
+                </div>
+                <div class="row">
+                    {% include "page-elements/helpful_resources.html" %}
+                </div>
+                <div class="row">
+                    {% include "page-elements/publications.html" %}
+                </div>
+            </div>
+        </div>
+
+    </div> <!-- /container -->
+
+{% endblock content %}

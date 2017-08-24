@@ -1,6 +1,85 @@
 {% extends "base.html" %}
 {% load cms_tags %}
 
+
 {% block content %}
-    {% placeholder "content" %}
+    <div class="banner-zone">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="title-box">
+              <h1>{% placeholder "banner title" %}</h1>
+              <h2>{% placeholder "banner subtitle" %}</h2>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="black-box">
+              <p>{% placeholder "banner introduction" %}</p>
+            </div>
+          </div>
+        </div><!-- row -->
+      </div><!-- container -->
+    </div><!-- banner-zone -->
+
+    <div class="container">
+
+      <div class="row text-block">
+        <a id="nav-anchor"></a>
+        <p class="emphasis"><span>The Cookbook.</span> The chevrons below lay out the steps along the CE3 roadmap, from Research and Analysis, to Deployment and Operations. Within each chevron, you will find information, tools and resources to help you complete that step.</p>
+      </div>
+
+      <div id="chevron-nav-block" class="row">
+        <div class="col-lg-2">
+          <div class="row">
+            <div class="section-header null">&nbsp;</div>
+          </div>
+          <div class="row">
+            <a href=""><div class="col-xs-12 chevron intro"><span>Introduction</span></div></a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-3">
+          <div class="row">
+            <div class="section-header">Research & Analysis</div>
+          </div>
+          <div class="row">
+            <a href=""><div class="col-xs-4 chevron"><span>Needs Analysis</span></div></a>
+            <a href=""><div class="col-xs-4 chevron"><span>Regulatory Compliance</span></div></a>
+            <a href="prelim-sol-des.html"><div class="col-xs-4 chevron"><span>Preliminary Solution Design</div></a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-3">
+          <div class="row section">
+            <div class="section-header">Planning</div>
+          </div>
+          <div class="row">
+            <a href="proj-finance.html"><div class="col-xs-4 chevron"><span>Project Finance</span></div></a>
+            <a href=""><div class="col-xs-4 chevron"><span>Partner Selection</span></div></a>
+            <a href=""><div class="col-xs-4 chevron"><span>Deployment Management</span></div></a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-4">
+          <div class="row section">
+            <div class="section-header">Deployment & Operations</div>
+          </div>
+          <div class="row">
+            <a href=""><div class="col-xs-3 chevron"><span>Education</span></div></a>
+            <a href="energy_en-fund.html"><div class="col-xs-3 chevron"><span>Energy</span></div></a>
+            <a href=""><div class="col-xs-3 chevron"><span>Connectivity</span></div></a>
+            <a href=""><div class="col-xs-3 chevron pm"><span>Project Management</span></div></a>
+          </div>
+        </div>
+      </div> <!-- .row -->
+
+      <div class="row" style="margin-top:70px">
+        <div class="col-sm-5">
+          {% placeholder "CE3 Pilot Image" %}
+        </div>
+        <div class="col-sm-7">
+          <h3>The CE3 Pilot</h3>
+          <p>{% placeholder "project introduction" %}</p>
+        </div>
+      </div>
+
+    </div> <!-- /container -->
+
 {% endblock content %}

@@ -32,3 +32,9 @@ INSTALLED_APPS.extend([
 MIDDLEWARE_CLASSES.extend([
     # add your own middlewares here
 ])
+
+CMS_TEMPLATES = (
+    ('content.html', 'Home Page'),
+    ('page-content.html', 'Section Page'),
+    ('sub-section-page.html', 'Sub Section Page'),
+)

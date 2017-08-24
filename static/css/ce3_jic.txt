@@ -1,0 +1,351 @@
+/* Bootstrap style overrides for Wellbeing@work
+-------------------------------------------------- */
+
+html {
+
+}
+
+body {
+  moz-osx-font-smoothing: grayscale;
+  padding-top: 50px;
+  font-family: "Open Sans", Helvetica, Arial, Verdana, sans-serif;
+}
+
+p.emphasis {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.row.text-block {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.descriptor {
+  text-transform: uppercase;
+  color: #999;
+  font-size: 0.8em;
+}
+
+
+/* Navigation
+------------------------- */
+
+.navbar-ce3 {
+  background: rgba(255,255,255,0.85);
+  border: none;
+}
+
+.navbar-ce3 .navbar-brand {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #002b5c;
+}
+.navbar-ce3 .navbar-brand:hover {
+  color: #666;
+}
+
+.navbar-ce3 .navbar-brand sup {
+  color: #999;
+}
+
+.navbar-brand img {
+  height: 20px;
+}
+
+.navbar-ce3 .navbar-nav > li > a {
+  color: #999;
+}
+
+.navbar-ce3 .navbar-nav > li > a:focus,
+.navbar-ce3 .navbar-nav > li > a:hover {
+  color: #002b5c;
+}
+
+.navbar-default .navbar-nav > .active > a {
+  color: #29bbee;
+  background-color: transparent;
+}
+
+
+/* BANNER ZONE
+------------------------- */
+
+.banner-zone {
+  background: url(../images/banner_image.jpg) no-repeat center center;
+  background-size: cover;
+  padding: 20px;
+}
+
+.banner-zone .container {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+
+/* CHEVRONS
+------------------------- */
+
+.section-header {
+  background-color: #002b5c;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: none;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.section-header.null {
+  background-color: transparent;
+}
+
+.section-header h5 {
+  color: #666;
+}
+
+.chevron {
+  line-height: 60px;
+  background-color: #bfcad6;
+  background: #bfcad6 url(../images/arrow-tip.png) no-repeat right top;
+  background-size: contain;
+  height: 62px;
+  padding: 0 20px 0 5px;
+  text-align: center;
+}
+.chevron span {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #00142b;
+  font-size: 13px;
+  line-height: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.chevron.pm {
+  background-image: none;
+}
+
+.chevron:hover {
+  background: #e5e9ee no-repeat right top;
+  background-image: url(../images/arrow-tip_active.png), -moz-linear-gradient(left, #bfcad6 0%, #e5e9ee 20%); /* FF3.6-15 */
+  background-image: url(../images/arrow-tip_active.png), -webkit-linear-gradient(left, #bfcad6 0%,#e5e9ee 20%); /* Chrome10-25,Safari5.1-6 */
+  background-image: url(../images/arrow-tip_active.png), linear-gradient(to right, #bfcad6 0%,#e5e9ee 20%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background-image: url(../images/arrow-tip_active.png), filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfcad6', endColorstr='#e5e9ee',GradientType=1 ); /* IE6-9 */
+  background-size: contain;
+}
+
+.chevron.pm:hover {
+  background: #e5e9ee;
+  background-image: -moz-linear-gradient(left, #bfcad6 0%, #e5e9ee 20%); /* FF3.6-15 */
+  background-image: -webkit-linear-gradient(left, #bfcad6 0%,#e5e9ee 20%); /* Chrome10-25,Safari5.1-6 */
+  background-image: linear-gradient(to right, #bfcad6 0%,#e5e9ee 20%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background-image: filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfcad6', endColorstr='#e5e9ee',GradientType=1 ); /* IE6-9 */
+}
+
+
+/* CHEVRONS - DETAIL PAGES
+------------------------- */
+
+
+.section-header-detail {
+  background-color: #002b5c;
+  color: #fff;
+  text-align: left;
+  padding: 5px 0 5px 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: none;
+  border-bottom: 2px solid #fff;
+}
+
+.chevron-detail {
+  background-color: #bfcad6;
+  background: #bfcad6 url(../images/arrow-tip_intro.png) no-repeat right top;
+  background-size: contain;
+  padding: 10px 10px 15px 20px;
+  color: #002b5c;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.chevron-detail h1 {
+  margin: 0 30px 8px 0;
+}
+
+.chevron-detail h4 {
+  margin: 0 50px 0 0;
+  font-style: italic;
+  line-height: 1.2;
+}
+
+.chevron-in-line {
+  background-color: #bfcad6;
+  background: #bfcad6 url(../images/arrow-tip_intro.png) no-repeat right top;
+  background-size: contain;
+  padding: 0 8px 0 5px;
+  color: #002b5c;
+  font-family: 'Open Sans Condensed', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+ul.sub-section-list {
+  list-style-type: none;
+  padding-left: 0px;
+  display: block;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+ul.sub-section-list > li {
+  margin: 1px 0;
+}
+
+ul.sub-section-list > li > a {
+  padding: 10px;
+  display: block;
+  text-indent: -1em;
+  padding-left: 2em;
+}
+
+ul.sub-section-list > li > a.active {
+  color: #002b5c;
+  background-color: #e5e9ee;
+  background: #e5e9ee url(../images/arrow-tip_active-intro.png) no-repeat right top;
+  background-size: contain;
+}
+
+.step-through-nav {
+  margin: 20px 0;  
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.step-through-nav .descriptor {
+  padding-right: 5px;
+}
+
+.step-through-nav .chevron-in-line {
+  padding: 5px 14px 5px 10px;
+}
+
+ul.ce3-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul.ce3-list > li {
+  margin-bottom: 15px;
+}
+
+ul.ce3-list > li > a {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.well.resource-block {
+  border: none;
+  border-radius: 0;
+  border-top: solid 3px #d8d6d3;
+  background-color: #f7f6f5;
+  box-shadow: none;
+  margin-top: 40px;
+}
+
+.well h3:first-child {
+  margin-top: 0;
+}
+
+
+/* FOOTER
+------------------------- */
+
+.footer {
+  margin: 40px 0 20px;
+  padding: 0;
+  color: #999;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.footer a {
+  color: #666;
+}
+
+.foot-1 {
+  padding: 10px 20px 10px 0;
+  text-align: right;
+  background: transparent;
+}
+
+.foot-2 {
+  padding: 10px 0;
+  text-align: center;
+  background: #d8d6d3;
+}
+
+.foot-2 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.foot-2 ul li {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  .navbar-wellbeing {
+    background: rgba(255,255,255,0.85); // rgba(40,96,144,0.85);
+    border: none;
+  }
+  .navbar-wellbeing .navbar-brand {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .row.text-block {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .navbar-default.ce3-sidenav .navbar-nav > li {
+    float: none;
+  }
+
+}
+
+@media (min-width: 460px) and (max-width: 1199px) {
+  .chevron {
+    padding: 0 20px;
+  }
+  .chevron span {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 1199px) {
+  .section-header {
+    border: 1px solid #fff;
+    border-bottom: 2px solid #fff;
+  }
+  .chevron.pm {
+    background-image: none;
+  }
+  p.emphasis {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 50px;
+  }
+}
