@@ -4,7 +4,8 @@
 
 {% block content %}
 
-    <div class="container">
+{#    <div class="container">#}
+
         <div class="row">
 
             <div class="col-sm-4">
@@ -18,19 +19,18 @@
                     </div>
                     <div id="side-nav" class="collapse navbar-collapse main-nav">
                         <ul class="nav navbar-nav">
-                            <li class="step-through-nav"><a href="index.html#nav-anchor"><span
+                            <li class="step-through-nav"><a href="/en/"><span
                                     class="glyphicon glyphicon-chevron-left"></span> Back to Cookbook</a></li>
-                            <li class="active"><a href="prelim-sol-des.html">{% page_attribute "page_title" %}</a>
-                            </li>
-                            <li><a href="psd_pull-tog-des.html">1. Pulling Together The Design</a></li>
-                            <li><a href="psd_asbl-tech-req.html">2. Assemble Technical Requirements</a></li>
-                            <li><a href="">3. Develop and Post Competitive Tender</a></li>
-                            <li><a href="">4. Shortlist Selections</a></li>
-                            <li><a href="">5. Reconcile Submission CAPEX with Business Model</a></li>
-                            <li><a href="">6. Iterate Solution Design With Selected Vendors</a></li>
-                            <li><a href="">7. Select Final Design & Finalize Business Model</a></li>
-                            <li class="step-through-nav"><span class="descriptor">up next:</span><a
-                                    class="chevron-in-line">{% placeholder "next section" %}</a></li>
+                        </ul>
+                        <div class="nav navbar-nav">
+                            <li><a href="/en/">{% page_attribute "page_title" request.current_page.parent_id %}</a></li>
+                            {% placeholder "section menu" %}
+                        </div>
+                        <ul class="nav navbar-nav">
+                             <li class="step-through-nav">
+                                 <span class="descriptor">up next:</span>
+                                 {% placeholder "next page link" %}
+                             </li>
                         </ul>
                     </div>
                 </div>
@@ -57,6 +57,6 @@
             </div>
         </div>
 
-    </div> <!-- /container -->
+{#    </div> <!-- /container -->#}
 
 {% endblock content %}

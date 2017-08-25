@@ -1,8 +1,8 @@
-{% extends "base.html" %}
+{% extends "chevron-category-page.html" %}
 {% load cms_tags %}
 
 
-{% block content %}
+{% block section-content %}
 
     <div class="container">
 
@@ -22,8 +22,8 @@
                             <li class="step-through-nav"><a href="/en/"><span
                                     class="glyphicon glyphicon-chevron-left"></span> Back to Cookbook</a></li>
                         </ul>
-                        <div>{% placeholder "Section Page Link" %}</div>
                         <div class="nav navbar-nav">
+                            <li class="active"><a href="{{ request.current_page.parent.url }}">{% page_attribute "page_title" %}</a></li>
                             {% placeholder "section menu" %}
                         </div>
                     </div>
@@ -54,4 +54,4 @@
 
     </div> <!-- /container -->
 
-{% endblock content %}
+{% endblock section-content %}
