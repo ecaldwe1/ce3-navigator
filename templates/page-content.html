@@ -23,9 +23,15 @@
                                     class="glyphicon glyphicon-chevron-left"></span> Back to Cookbook</a></li>
                         </ul>
                         <div class="nav navbar-nav">
-                            <li class="active"><a href="{{ request.current_page.parent.url }}">{% page_attribute "page_title" %}</a></li>
+{#                            <li class="active"><a href="{{ request.current_page.parent.url }}">{% page_attribute "page_title" %}</a></li>#}
                             {% placeholder "section menu" %}
                         </div>
+                        <ul class="nav navbar-nav">
+                             <li class="step-through-nav">
+                                 <span class="descriptor">up next:</span>
+                                 {% placeholder "next section link" %}
+                             </li>
+                        </ul>
                     </div>
                 </div>
 
