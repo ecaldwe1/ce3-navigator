@@ -507,6 +507,12 @@ ul.ce3-list > li > a {
 }
 
 
+/* About Page
+-------------------------------------------------- */
+
+.about-image {
+    padding: 50px;
+}
 
 
 /* RESPONSIVE CSS
