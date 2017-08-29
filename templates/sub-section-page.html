@@ -44,7 +44,20 @@
                 <h4>{% placeholder "sub section subtitle" %}</h4>
 
                 {% placeholder "sub section core text" %}
+                {% placeholder "sub section core text top paragraph" %}
 
+                 <div id="id-short">
+                    <a class="show_all" data-long-id="id-long">
+                      Read More
+                    </a>
+                 </div>
+
+                <div id="id-long" style="display:none">
+                {% placeholder "sub section core text continued" %}
+                    <a class="show_less" data-short-id="id-short">
+                        Show Less
+                    </a>
+                </div>
                 <div class="row">
                     {% include "page-elements/tools_templates.html" %}
                 </div>
