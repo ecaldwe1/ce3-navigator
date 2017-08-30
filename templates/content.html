@@ -114,23 +114,3 @@
     </div> <!-- /container -->
 
 {% endblock content %}
-
-{% block extra_js %}
-<script type="text/javascript">
-$(document).ready(function () {
-    var myFileUri = "/countries-list.txt";
-    alertCountryCount(myFileUri);
-});
-
- function alertCountryCount(myFile) {
-
-         //use jquery get
-         $.get(myFile, function (data) {
-             alert(data);
-             var lineCount = data.split('\n').length;
-             //do what you want to do in lineCount
-             alert(lineCount);
-         })
-     }
-</script>
-{% endblock extra_js %}
