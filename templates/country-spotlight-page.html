@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load cms_tags %}
+
+
+{% block content %}
+    <div class="container">
+        <div class="col-sm-12 col-lg-12">
+            <div class="row">
+                <h2>{% placeholder "country page title" %}</h2>
+            </div>
+            <div class="row about-image">
+                {% placeholder "country page image" %}
+            </div>
+            <div class="row">
+                {% placeholder "country page text" %}
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

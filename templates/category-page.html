@@ -1,0 +1,33 @@
+{% extends "chevron-category-page.html" %}
+{% load cms_tags %}
+
+{% block section-content %}
+    <div class="container">
+        <div class="col-sm-12 col-lg-12">
+            <div class="row about-image">
+                {% placeholder "category page image" %}
+            </div>
+            <div class="row">
+                <h1>Overview</h1>
+                {% placeholder "overview text" %}
+            </div>
+            <div class="navbar navbar-default sidenav-ce3">
+                <div id="side-nav" class="collapse navbar-collapse main-nav">
+
+            <div class="row">
+                <h1>Sections</h1>
+                <div class="nav navbar-nav">
+                    {% placeholder "section menu" %}
+                </div>
+            </div>
+            <ul class="nav navbar-nav pull-right">
+                 <li class="step-through-nav">
+                     <span class="descriptor">up next:</span>
+                     {% placeholder "next section link" %}
+                 </li>
+            </ul>
+        </div></div>
+        </div>
+    </div>
+
+{% endblock section-content %}

@@ -35,6 +35,8 @@ MIDDLEWARE_CLASSES.extend([
 
 CMS_TEMPLATES = (
     ('content.html', 'Home Page'),
+    ('country-spotlight-page.html', 'Country Spotlight Page'),
+    ('category-page.html', 'Section Category Page'),
     ('page-content.html', 'Section Page'),
     ('sub-section-page.html', 'Sub Section Page'),
     ('about.html', 'About Page'),
