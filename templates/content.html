@@ -91,6 +91,46 @@
         </div>
       </div>
 
+      <div class="row" style="margin-top:70px">
+        <div class="col-sm-5">
+          {% placeholder "Uganda Spotlight Image" %}
+        </div>
+        <div class="col-sm-7">
+          <h3> {% placeholder "Uganda Spotlight Header" %}</h3>
+          <p>{% placeholder "Uganda Spotlight Information" %}</p>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:70px">
+        <div class="col-sm-5">
+          {% placeholder "South Africa Spotlight Image" %}
+        </div>
+        <div class="col-sm-7">
+          <h3> {% placeholder "South Africa Spotlight Header" %}</h3>
+          <p>{% placeholder "South Africa Spotlight Information" %}</p>
+        </div>
+      </div>
+
     </div> <!-- /container -->
 
 {% endblock content %}
+
+{% block extra_js %}
+<script type="text/javascript">
+$(document).ready(function () {
+    var myFileUri = "/countries-list.txt";
+    alertCountryCount(myFileUri);
+});
+
+ function alertCountryCount(myFile) {
+
+         //use jquery get
+         $.get(myFile, function (data) {
+             alert(data);
+             var lineCount = data.split('\n').length;
+             //do what you want to do in lineCount
+             alert(lineCount);
+         })
+     }
+</script>
+{% endblock extra_js %}

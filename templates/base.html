@@ -143,6 +143,8 @@
     <!-- django CMS -->
     {% render_block "js" %}
 
+    {% block extra_js %} {% endblock extra_js %}
+
     <!-- Divio Cloud -->
     {{ ALDRYN_SNAKE.render_tail }}
 
